@@ -1,12 +1,18 @@
-numeros = [1, 4, 2, 4, 5, 6, 4]
-print(numeros)
-eliminar = 4
+# Eliminar todos los valores iguales de una lista. 
+# Previamente, solicitar el valor que quiero eliminar y si no está, 
+# mostrar un cartel diciendo que no lo ha encontrado.
 
-#lista_sin_4 = []
-""" for n in numeros:
-    if n != eliminar:
-        lista_sin_4.append(n)
-numeros = lista_sin_4
- """
-lista_sin_4 = [n for n in numeros if n != eliminar]
-print(lista_sin_4)
+numeros = [1, 4, 22, 4, 5, 4, 77]
+print(numeros)
+ 
+numero_a_eliminar = 4
+numeros_sin_4 = []
+
+for numero in numeros:
+    if numero != numero_a_eliminar:
+        numeros_sin_4.append(numero)
+numeros = numeros_sin_4
+print(numeros)
+
+#numeros = [n for n in numeros if n != 4]
+#print(numeros)
