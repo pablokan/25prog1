@@ -1,0 +1,7 @@
+name: Local 01
+version: 0.0.1
+schema: v1
+models:
+  - name: DeepCoder
+    provider: ollama
+    model: deepcoder:14b-preview-q4_K_M
