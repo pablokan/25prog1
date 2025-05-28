@@ -4,7 +4,9 @@ datos_08f = []
 datos_08m = []
 for i in range(len(lista_nacidos2008)):
     if lista_nacidos2008[i] == 'f':
-        datos_08f.append([int(lista_nacidos2008[i-1]), lista_nacidos2008[i-2]])
+        cantidad = int(lista_nacidos2008[i-1])
+        nombre = lista_nacidos2008[i-2]
+        datos_08f.append([cantidad, nombre])
     elif lista_nacidos2008[i] == 'm':
         datos_08m.append([int(lista_nacidos2008[i-1]), lista_nacidos2008[i-2]])
 datos_08f.sort(reverse=True)
