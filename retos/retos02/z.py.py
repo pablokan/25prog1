@@ -1,3 +1,6 @@
-sust = {'a': '4', 'e': '3', 'o': '0'}
-if 'b' in sust:
-    print('ta')
+def foo(*args):
+    print(args)
+    print(*args)
+    a, b, *_, d = args
+    print(a, b, d)
+foo(1, 2, 3, 4, 5, 6, 7, 8)
