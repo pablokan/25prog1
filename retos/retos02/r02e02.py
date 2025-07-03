@@ -5,17 +5,14 @@ def codificar_mensaje(msg, *palabras_clave, mayusculas_resaltado=True, **sustitu
     caracteres_msg = list(msg)
     palabras_originales = msg.split()
 
-    print(f'{sustituciones=}')
-    
     for i in range(len(caracteres_msg)):
         if caracteres_msg[i] in sustituciones:
             caracteres_msg[i] = sustituciones[caracteres_msg[i]]
 
     msg_modif = ''.join(caracteres_msg)
     palabras_modificadas = msg_modif.split()
-    print(f'{palabras_originales=}')
-    print(f'{palabras_modificadas=}')
     
+    print(f'{palabras_clave=} {mayusculas_resaltado=}')
     for palabra_clave in palabras_clave:
         for i in range(len(palabras_originales)):
             if palabra_clave == palabras_originales[i]:
