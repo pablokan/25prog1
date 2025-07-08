@@ -3,10 +3,11 @@ class A:
         self._uno = 1
         self.__dos = 2
         self.tres = 3
+        self.__cuatro = 4
 
         @property
-        def uno(self):
-            return self._uno
+        def cuatro(self):
+            return self.__cuatro
         
         @property
         def tres(self):
@@ -14,9 +15,8 @@ class A:
         
 
 a = A()
-print(a._uno)  # Acceso a atributo protegido
+#print(f'# {a._uno=} #')  # Acceso a atributo protegido
 #print(A.__dos)  # Esto causará un error porque __dos es privado
-print(a._A__dos)  # Acceso al atributo privado usando el nombre mangled
-
-#print(a.uno)  # Acceso a través del método de propiedad
-print(a.tres)  # Acceso al atributo público
+print(f'# {a._A__dos=} #')  # Acceso al atributo privado usando el nombre mangled
+print(f'# {a.cuatro=} #')  # Acceso a través del método de propiedad
+print(f'# {a.tres=} #')  # Acceso al atributo público

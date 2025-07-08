@@ -1,12 +1,7 @@
 def codificar_mensaje(msg, *palabras_clave, mayusculas_resaltado=True, **sustituciones):
     set_palabras_clave = set(palabras_clave)
     palabras = msg.split(' ')
-    palabras_codificadas = [
-        (palabra.upper() if mayusculas_resaltado else f'*{palabra}*')
-        if palabra in set_palabras_clave
-        else "".join(sustituciones.get(c, c) for c in palabra)
-        for palabra in palabras
-    ]
+    palabras_codificadas = [(palabra.upper() if mayusculas_resaltado else f'*{palabra}*') if palabra in set_palabras_clave else "".join(sustituciones.get(c, c) for c in palabra) for palabra in palabras]
     print(' '.join(palabras_codificadas))
 
 codificar_mensaje(
