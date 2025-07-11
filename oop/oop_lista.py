@@ -13,18 +13,16 @@ class Alumno:
     def promedio(self, *args):
         return sum(args) / len(args)
 
-# sustituye la instanciación individual y construye una carga pidiendo al usuario que ingrese los datos, se instancie y se vaya cargando los objetos en una lista. Luego, hacé un recorrido mostrando los nombres completos y los mails
-alumnos = []
-num_alumnos = int(input("¿Cuántos alumnos desea ingresar? "))
+alumnos: list[Alumno] = []
 
-for i in range(num_alumnos):
-    print(f"\nIngrese los datos para el alumno {i+1}:")
+for i in range(2):
     nombre = input("Nombre: ")
     apellido = input("Apellido: ")
     nuevo_alumno = Alumno(nombre, apellido)
     alumnos.append(nuevo_alumno)
 
-print("\n--- Lista de Alumnos ---")
+print()
+print("Lista de Alumnos")
 for alumno in alumnos:
     print(f"Nombre Completo: {alumno.nombre_completo()}")
-    print(f"Mail: {alumno.get_mail()}")
+    print(f"Mail: {alumno.}")
