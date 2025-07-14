@@ -1,15 +1,16 @@
 class Persona:
-    def __init__(self, nombre, edad) -> None:
+    def __init__(self, nombre, edad, altura) -> None:
         self.nombre = nombre
         self.edad = edad
-
+        self.altura = altura
+        
     @property
-    def edad(self):
-        return self.__edad
-    
-    @edad.setter
-    def edad(self, nueva_edad):
-        self.__edad = nueva_edad
+    def nombre(self):
+        return self.__nombre
 
-p = Persona('John', 33)
+    @nombre.setter
+    def nombre(self, asignar_nombre):
+        self.__nombre = asignar_nombre
+
+p = Persona('John', 33, 1.88)
 print(p.edad)
