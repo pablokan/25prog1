@@ -1,5 +1,5 @@
 class Color:
-    def __init__(self, nombre):
+    def __init__(self, nombre) -> None:
         self.nombre = nombre
 
     def __add__(self, otro_color):
@@ -7,7 +7,7 @@ class Color:
             return Color("violeta")
         else:
             return Color('desconocido')
-        
+
     def __repr__(self) -> str:
         return f'Clase: {self.__class__.__name__}, Nombre: {self.nombre}'
     
