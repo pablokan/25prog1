@@ -27,7 +27,7 @@ def archivar_clientes_por_documento(datos, dni_buscado):
         ap_arch.writelines(apellidos)
 
 def main() -> None:
-    with open('clientes.txt') as a:
+    with open('practicos/prac5/clientes.txt') as a:
         clientes = a.readlines()
     _ = clientes.pop(0)
 
@@ -36,7 +36,7 @@ def main() -> None:
     print(f'{acumular_total_deuda_por_monto(clientes, 90_000)}', end=' - ')
     print(f'{acumular_total_deuda_por_monto(clientes, 40_000, False)}')
     print('3) Grabación en archivo "apellidos.txt"')
-    archivar_clientes_por_documento(clientes, '44000000')
+    archivar_clientes_por_documento(clientes, '40000000')
 
 if __name__ == "__main__":
     main()

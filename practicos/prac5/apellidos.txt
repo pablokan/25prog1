@@ -1,3 +1,0 @@
-Apellidos de los clientes con DNI mayor a 44000000
-Dominetti
-Farrell
