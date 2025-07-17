@@ -1,0 +1,15 @@
+{
+    "nombre": "Alice",
+    "edad": 30,
+    "ciudad": "Nueva York",
+    "es_estudiante": false,
+    "cursos": [
+        "Matem\u00e1ticas",
+        "Historia",
+        "Programaci\u00f3n"
+    ],
+    "direccion": {
+        "calle": "Calle Falsa 123",
+        "codigo_postal": "10001"
+    }
+}
