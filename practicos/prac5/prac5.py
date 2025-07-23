@@ -2,9 +2,9 @@ def contar_clientes_localidad(datos, localidad_buscada):
     c = 0
     for dato in datos:
         *_, localidad = dato.split('#')
-        if localidad_buscada == localidad[:-1]:
+        if localidad_buscada == localidad.strip():
             c += 1
-    return c
+    return f'La cantidad de personas de {localidad_buscada} es {c}'
 
 def acumular_total_deuda_por_monto(datos, monto_buscado, mayor=True):
     ac_mayor = ac_menor = 0
@@ -22,16 +22,18 @@ def archivar_clientes_por_documento(datos, dni_buscado):
         dni, nombre_completo, *_ = dato.split('#')
         if dni > dni_buscado:
             apellidos.append(f'{nombre_completo.split()[1]}\n')
-    with open('apellidos.txt', 'w') as ap_arch:
-        ap_arch.write(f'Apellidos de los clientes con DNI mayor a {dni_buscado}\n')
-        ap_arch.writelines(apellidos)
+    with open('practicos/prac5/apellidos.txt', 'w') as arch_apellidos:
+        arch_apellidos.write(f'Apellidos de los clientes con DNI mayor a {dni_buscado}\n')
+        arch_apellidos.writelines(apellidos)
 
 def main() -> None:
-    with open('practicos/prac5/clientes.txt') as a:
-        clientes = a.readlines()
-    _ = clientes.pop(0)
+    with open('practicos/prac5/clientes.txt') as arch_clientes:
+        clientes = arch_clientes.readlines()
+    clientes.pop(0)
 
     print(f'1) {contar_clientes_localidad(clientes, 'Sampacho')}')
+    otro_pueblo = 'La Carlota'
+    print(f'1) {contar_clientes_localidad(clientes, otro_pueblo)}')
     print('2) Deudas acumuladas:', end=' ')
     print(f'{acumular_total_deuda_por_monto(clientes, 90_000)}', end=' - ')
     print(f'{acumular_total_deuda_por_monto(clientes, 40_000, False)}')
