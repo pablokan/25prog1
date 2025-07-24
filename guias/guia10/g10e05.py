@@ -21,10 +21,17 @@ class Libro:
     def __str__(self):
         return f"{self.titulo} by {self.autor} ({'Disponible' if self.disponible else 'No disponible'})"
     
-fundacion = Libro("Fundación", "Isaac Asimov")
-print(fundacion)  # Output: Fundación by Isaac Asimov
-print(fundacion.prestar())
-print(fundacion)
-print(fundacion.prestar())  # Output: El libro ya está prestado
-print(fundacion.devolver())
-print(fundacion)
+
+def main():
+    print(f'\n{'-'*80}')
+    fundacion = Libro("Fundación", "Isaac Asimov")
+    print(fundacion)  # Output: Fundación by Isaac Asimov
+    print(fundacion.prestar())
+    print(fundacion)
+    print(fundacion.prestar())  # Output: El libro ya está prestado
+    print(fundacion.devolver())
+    print(fundacion)
+    print(f'{'-'*80}\n')
+
+if __name__ == '__main__':
+    main()
