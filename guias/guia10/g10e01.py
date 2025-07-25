@@ -1,5 +1,4 @@
-from pathlib import Path
-from ...libs.basic import raya
+from basic import raya
 
 class Auto:
     def __init__(self, marca, modelo, anio):

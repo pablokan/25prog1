@@ -1,0 +1,35 @@
+	"Reflex": {
+	 	"prefix": "rf",
+	 	"body": [
+	 		"import reflex as rx",
+			"from rxconfig import config",
+	 		"",
+			"class State(rx.State):",
+			"\tnombre: str",
+			"\tedad: int",
+			"\tlista: list[str]",
+			"",
+			"\tdef algun_metodo(self):",
+			"\t\tpass",
+			"",
+			"",
+			"def index() -> rx.Component:",
+			"\tpage =  rx.box(",
+			"\t\trx.text('Hola mundo'),",
+			"\t\trx.input('Nombre', on_blur=State.set_nombre),",
+			"",
+			"",
+			"",
+			"\t)",
+			"\treturn page",
+			"",
+			"",
+			"app = rx.App()",
+			"app.add_page(index)",
+
+	 	],
+
+		"description": "Esqueleto base de Reflex"
+
+	}
+}
