@@ -1,4 +1,7 @@
-from basic import raya
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+from libs.basic import raya
 
 class Auto:
     def __init__(self, marca, modelo, anio):

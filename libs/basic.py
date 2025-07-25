@@ -8,7 +8,7 @@ def raya(ubicacion:Literal['inicio', 'fin']|str='', caracter: str='-', longitud:
     if ubicacion == 'inicio':
         cartel = f' Programa {file_name} '
     elif ubicacion == 'fin':
-        cartel = f'Fin de {file_name}'
+        cartel = f' Fin de {file_name} '
     else:
         cartel = ubicacion
     
@@ -18,5 +18,3 @@ def raya(ubicacion:Literal['inicio', 'fin']|str='', caracter: str='-', longitud:
 
 if __name__ == '__main__':
     raya('inicio')
-    raya()
-    raya('fin')
