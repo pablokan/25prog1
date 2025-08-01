@@ -10,9 +10,9 @@ class Circulo:
     
 
 circulos = []
-
-for i in range(3):
-    c = Circulo(i+1)
+radios = (1, 9, 3.4)
+for radio in radios:
+    c = Circulo(radio)
     circulos.append(c)
 
 for c in circulos:
