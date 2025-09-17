@@ -1,5 +1,5 @@
 mi_lista = [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
-objetivo = 8
+objetivo = 91
 
 def b_b_con_indice(lista, objetivo, inicio=0, fin=None):
     if fin is None:
@@ -8,6 +8,7 @@ def b_b_con_indice(lista, objetivo, inicio=0, fin=None):
     if inicio > fin:
         return 'El elemento no está en la lista'
     
+    print(lista[inicio:fin+1])
     m = (inicio + fin) // 2
 
     if objetivo == lista[m]:
@@ -18,3 +19,4 @@ def b_b_con_indice(lista, objetivo, inicio=0, fin=None):
         return b_b_con_indice(lista, objetivo, m + 1, fin)
 
 print(b_b_con_indice(mi_lista, objetivo))
+
