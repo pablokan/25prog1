@@ -14,7 +14,7 @@ class Libreria:
         self._libros: list[Libro] = []
 
     def agregar_libro(self, titulo, autor):
-        libro = Libro(titulo, autor)
+        libro = Libro(titulo, autor) # composición
         self._libros.append(libro)
 
     def listar_libros(self):

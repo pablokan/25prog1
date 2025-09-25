@@ -13,12 +13,12 @@ class Libreria:
     def __init__(self) -> None:
         self._libros: list[Libro] = []
 
-    def agregar_libro(self, libro):
+    def agregar_libro(self, libro: Libro):
         self._libros.append(libro)
 
     def listar_libros(self):
-        for l in self._libros:
-            print(l)
+        for libro in self._libros:
+            print(libro)
 
 def main():
     lema = Libreria()
