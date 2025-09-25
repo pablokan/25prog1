@@ -1,9 +1,7 @@
 import calendar
 import locale
 
-# Configurar la localización a español de España
-#locale.setlocale(locale.LC_ALL, 'es_ES.UTF-8')
-
+locale.setlocale(locale.LC_ALL, 'es_AR.UTF-8')
 
 # Print the calendar for a specific month
 print(calendar.month(2025, 10))
