@@ -14,3 +14,4 @@ for dia in vacaciones_agosto:
     cal_rich = cal_rich.replace(f' {dia}\n', f' [bold green]{dia}[/bold green]\n')
 
 print(cal_rich)
+print(1, 'a', True)
