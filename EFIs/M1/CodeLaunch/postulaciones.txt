@@ -1,0 +1,12 @@
+Usuario: marcos || Proyecto: CodeLaunch
+Usuario: esteban || Proyecto: CodeLaunch
+Usuario: esteban || Proyecto: Anhelo
+Usuario: marcos || Proyecto: Anhelo
+Usuario: esteban || Proyecto: Susecretaria
+Usuario: socrates || Proyecto: El deablo
+Usuario: mauro_icardi2540 || Proyecto: Anhelo
+Usuario: mauro_icardi2540 || Proyecto: El deablo
+Usuario: {'tipo': 'Usuario', 'nombre': 'Maurinho Juarez', 'usuario': 'socrates', 'rol': 'DT', 'contraseña': 'user123'} || Proyecto: Susecretaria
+Usuario: socrates || Proyecto: Susecretaria
+Usuario: kan_me6100 || Proyecto: YPF
+Usuario: mauro_icardi2540 || Proyecto: YPF
