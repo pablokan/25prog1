@@ -1,0 +1,4 @@
+usuario:
+Nombre completo: juan ignacio andrada guzman
+contraseña: 1234567
+correo: juani@gmail.com

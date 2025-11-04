@@ -1,0 +1,2 @@
+Medicamento,Ibuprofeno,25-15-2030,15685,30,s,1651,Lab.Torino,358465165
+Medicamento,omeprazol,01-01-2030,1111,11,s,11111,prov1,10101
