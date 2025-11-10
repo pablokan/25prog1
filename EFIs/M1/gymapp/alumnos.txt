@@ -1,0 +1,7 @@
+dni;nombre;apellido;fecha_alta;activo
+47911266;Santiago;Bianchi;2025-09-27;True
+43131769;Brisa;Martoccio;2025-10-12;True
+46848911;Tomas;Maluf;2025-10-02;True
+
+1;a;a;2025-11-07;True
+1;a;a;2025-11-07;True
