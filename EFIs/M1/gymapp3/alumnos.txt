@@ -1,0 +1,4 @@
+Jorge;Fernandez;95888458;2025-11-13;True
+Luis;Fernandez;27820016;2025-11-13;True
+Brisa;Martoccio;8457369;2025-11-13;True
+Tomas;Maluf;46437123;2025-10-1;False

@@ -1,17 +1,12 @@
-
-from .persona import *
+from .alumno import *
 class Actividad:
 
-    def __init__(self, nombre: str, profesor):
-       
+    def __init__(self, nombre: str):
         self.nombre = nombre
-        self.profesor = profesor
         self.alumnos = []
 
 
     #getters y setters
-    
-
     @property
     def nombre(self) -> str:
     
@@ -36,21 +31,10 @@ class Actividad:
             raise ValueError("El precio no puede ser negativo.")
         self._precio = float(valor)
 
-    @property
-    def profesor(self) -> Profesor:
-        return self._profesor
-
-    @profesor.setter
-    def profesor(self, valor: Profesor):
-       
-        if valor is not None and not isinstance(valor, Profesor):
-            raise TypeError(f"El profesor debe ser un objeto 'Profesor' o None.")
-        self._profesor = valor
 
     
     #métodos de gestión de alumnos
     
-
     def inscribir_alumno(self, alumno: Alumno):
         
         if not isinstance(alumno, Alumno):
@@ -75,5 +59,3 @@ class Actividad:
             print(f"Éxito: {alumno.nombre} ha sido quitado de {self.nombre}.")
         else:
             print(f"Error: {alumno.nombre} (DNI: {alumno.dni}) no está inscripto en {self.nombre}.")
-
- 
